@@ -27,21 +27,38 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.Write("Введите первое число: ");
-int num0 = int.Parse(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int num1 = int.Parse(Console.ReadLine());
-Console.Write("Введите третее число: ");
-int num2 = int.Parse(Console.ReadLine());
-if(num0 > num1){
-    if (num0 > num2){
-        Console.Write("Первое число является максимальным");
-    }
-    else Console.Write("третее число является максимальным");
+// Console.Write("Введите первое число: ");
+// int num0 = int.Parse(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int num1 = int.Parse(Console.ReadLine());
+// Console.Write("Введите третее число: ");
+// int num2 = int.Parse(Console.ReadLine());
+// if(num0 > num1){
+//     if (num0 > num2){
+//         Console.Write("Первое число является максимальным");
+//     }
+//     else Console.Write("третее число является максимальным");
+// }
+// else{
+//     if(num1 > num2){
+//         Console.Write("Второе число является макисмальным");
+//     }
+//     else Console.Write("Третее число является максимальным");
+// }
+
+
+// Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.Write("Введи число: ");
+int num = int.Parse(Console.ReadLine());
+if (num%2 == 0){
+    Console.Write(num+" является чётным");
 }
-else{
-    if(num1 > num2){
-        Console.Write("Второе число является макисмальным");
-    }
-    else Console.Write("Третее число является максимальным");
+else {
+Console.Write(num+" является нечётным");
 }
+
