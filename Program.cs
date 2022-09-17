@@ -53,12 +53,29 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.Write("Введи число: ");
-int num = int.Parse(Console.ReadLine());
-if (num%2 == 0){
-    Console.Write(num+" является чётным");
-}
-else {
-Console.Write(num+" является нечётным");
-}
+// Console.Write("Введи число: ");
+// int num = int.Parse(Console.ReadLine());
+// if (num%2 == 0){
+//     Console.Write(num+" является чётным");
+// }
+// else {
+// Console.Write(num+" является нечётным");
+// }
 
+// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+if(num > 1){
+    int ordinal = 0;
+    while(ordinal < num - 1){
+        ordinal += 2;
+        Console.Write(ordinal+" ");
+    }
+}
+else{
+    Console.Write("Нет чётных чисел меньше или равным введённому");
+}
